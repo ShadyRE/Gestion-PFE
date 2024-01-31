@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="register.css">
+   <link rel="icon" href="gestion-pfe-logo.png" type="image/icon type">
+
+    <title>Gestion PFE-Register</title>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="left">
+    <div id="signin">
+        <div class="logo">
+            <a href="index.html" class="navbar-brand"><span class="fw-bold fs-3 text-lead"><span class="fw-bold fs-3 text-lead">Ecole  Miage</span></a>
+        </div>
+        
+        
+        <form onsubmit="checkAccess(event)">
+            <div>
+                <label >Prenom</label>
+                <input type="text" class="text-input" required>
+            </div>
+            <div>
+                <label >Nom</label>
+                <input type="text" class="text-input" required>
+            </div>
+            <div>
+                <label >Numero Telephone</label>
+                <input type="number" class="text-input" required>
+            </div>
+            <div>
+                <label >Email</label>
+                <input type="email" class="text-input" required>
+            </div>
+            <div>
+                <label >Date de naissance</label>
+                <input type="date" class="text-input" required>
+            </div>
+            <div>
+              
+            </div>
+            <button type="submit" class="primary-btn">Registre</button>
+        </form>
+       
+        <div class="or">
+        <hr class="bar">
+        <span>OR</span>
+        <hr class="bar">
+    </div>
+    
+    <a href="login.html" class="secondary-btn">J'ai un Compte</a>
+</div>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2024 Ecole Miage <a href="https://www.linkedin.com/in/chadi-rezk-b77989249/">@Shady</a> </p>
+        <div>
+    
+        </div>
+    </footer>
+</div>
+    
+    <div id="right">
+        <div id="showcase">
+            <div class="showcase-content">
+                <h1 class="showcase-text">Gestion des <strong>PFE</strong> 
+                </h1>
+                 <a href="index.html" class="secondary-btn"> Page Principal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAccess(event) { event.preventDefault();
+
+            var isCorrect = true;
+        
+            if (isCorrect) {
+
+                alert("Accès autorisé! Redirection vers la page suivante...");
+              
+                window.location.href = 'adminloged.html';
+            } else {
+           
+                alert("Nom ou Email est incorrect");
+                
+            }
+        }
+        </script>
+</body>
+</html>
